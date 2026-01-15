@@ -1,0 +1,35 @@
+http://192.168.24.106:4000/busquedas-listas
+
+ {
+    "codigoSistema": "DIGREMES",
+    "codigoTransaccion": "REMESA",
+    "usuarioOriginador": "SISTEMAREMESA",
+    "agencia": "Oficinas Administrativas",
+    "personas": [
+        {
+            "esPrincipal": true,
+            "codigoCliente": "625489",
+            "numeroDocumento": "006659807",
+            "tipoDocumento": "DUI",
+            "tipoPersona": "N",
+            "fechaNacimiento": "1966-01-09",
+            "nombre1": "Juan",
+            "nombre2": "Manuel ",
+            "apellido1": "ABOUZAID",
+            "apellido2": "EL BAYEH",
+            "relacion": "Titular",
+            "direccion": [
+                {
+                    "direccion1": "COLONIA COSTA RICA, CALLE PUNTA ARENAS,     NO CASA 216, CIUDAD, SAN S",
+                    "direccion2": "ALVADOR, SAN SALVADOR, EL SALVADOR",
+                    "codigoPais": "USA"
+                },
+                {
+                    "direccion1": "CALLE JUAN PABLO II,  Y 25 AV  NORTE,  HOSPITAL GENERAL,   CIUDAD, SAN",
+                    "direccion2": " SALVADOR, SAN SALVADOR, EL SALVADOR",
+                    "codigoPais": "USA"
+                }
+            ]
+        }
+    ]
+}
