@@ -1,0 +1,94 @@
+# =====================================
+# SOLUCIÓN .NET (MULTI PROYECTO)
+# =====================================
+
+# -------------------------
+# BIN / OBJ por proyecto
+# -------------------------
+SegmentsFormBackend.Api/bin/
+SegmentsFormBackend.Api/obj/
+
+SegmentsFormBackend.Application/bin/
+SegmentsFormBackend.Application/obj/
+
+SegmentsFormBackend.Domain/bin/
+SegmentsFormBackend.Domain/obj/
+
+SegmentsFormBackend.Infrastructure/bin/
+SegmentsFormBackend.Infrastructure/obj/
+
+SegmentsFormBackend.Exceptions/bin/
+SegmentsFormBackend.Exceptions/obj/
+
+# Archivos de usuario / VS
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# ================================
+# Build & Publish
+# ================================
+
+**/bin/
+**/obj/
+**/out/
+
+# ================================
+# Logs
+# ================================
+
+*.log
+
+# ================================
+# Environment variables
+# ================================
+
+# Ignorar archivos .env en cualquier proyecto
+**/.env
+
+# Mantener ejemplo versionado
+!**/.env.example
+
+# ================================
+# OS generated files
+# ================================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ================================
+# SQL Server local / EF Core
+# ================================
+
+*.mdf
+*.ldf
+
+
+# ================================
+# Publish profiles
+# ================================
+
+SegmentsFormBackend.Api/Properties/PublishProfiles/
+
+# ================================
+# NuGet
+# ================================
+
+*.nupkg
+*.snupkg
+.nuget/
+
+# ================================
+# Temporary files
+# ================================
+
+*.tmp
+*.temp
+*.bak

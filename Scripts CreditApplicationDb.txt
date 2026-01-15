@@ -1,0 +1,33 @@
+create database CreditApplicationDb;
+
+CREATE TABLE consultAcepptation_logs (
+	Id int primary key not null identity(1,1),
+	DocumentNumber int null,
+	ApplicationNumber int null,
+	BuroResponse VARCHAR(MAX) NULL,
+    	PreventionListResponse VARCHAR(MAX) NULL,
+    	PrequalificationResponse VARCHAR(MAX) NULL,
+	PrequalificationDate datetime null
+)
+
+
+
+CREATE DATABASE SegmentsApplicationDb;
+
+CREATE TABLE RetiredCustomerSegment (
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    PensionInstitution NVARCHAR(150) NOT NULL, -- Institución de donde recibe la pensión (AFP, ISSS, INPEP, etc.)
+    PensionType NVARCHAR(50) NOT NULL, -- Pensioner | Beneficiary
+    PaymentCycle NVARCHAR(50) NOT NULL, -- Monthly | Bimonthly | Quarterly | Semiannual | Annual
+    PensionAmount DECIMAL(18,2) NOT NULL,
+    CreatedDate DATETIME NOT NULL
+);
+GOg
+
+ALTER TABLE RetiredCustomerSegment
+ADD CONSTRAINT CK_RetiredCustomerSegment_PensionType
+CHECK (PensionType IN ('Pensioner', 'Beneficiary'));
+
+ALTER TABLE RetiredCustomerSegment
+ADD CONSTRAINT CK_RetiredCustomerSegment_PaymentCycle
+CHECK (PaymentCycle IN ('Monthly', 'Bimonthly', 'Quarterly', 'Semiannual', 'Annual'));
