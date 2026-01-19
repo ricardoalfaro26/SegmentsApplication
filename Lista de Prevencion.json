@@ -33,3 +33,27 @@ http://192.168.24.106:4000/busquedas-listas
         }
     ]
 }
+
+
+
+{
+    "success": true,
+    "data": {
+        "resultado": "AUTORIZADO",
+        "codigoBusqueda": "86b034df-e4df-4ee1-8af5-ae744a21d36f",
+        "coincidenciasListas": [],
+        "listasInterna": {
+            "estado": "AUTORIZADO",
+            "listasPersonasCoincidencia": [],
+            "listasPersonasError": []
+        },
+        "listaInternacional": {
+            "estado": "AUTORIZADO",
+            "listasPersonasCoincidencia": [],
+            "listasPersonasError": []
+        }
+    },
+    "messages": [
+        "Se han realizado las búsquedas en listas con éxito"
+    ]
+}
